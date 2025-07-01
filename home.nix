@@ -29,6 +29,17 @@ in
   ];
 
   home.file = {
+
+    # Bat config
+   ".config/bat/config".text = ''
+    --theme="Nord"
+    --style="numbers,changes,grid"
+    --paging=auto
+   '';
+
+    # Qtile Config
+   ".config/qtile".source = ./qtile;
+
   };
 
   home.sessionVariables = {
@@ -36,14 +47,28 @@ in
   };
   
   programs = {
+
+   alacritty = {
+    enable = true;
+     settings = {
+      window.opacity = 0.9;
+      font.normal = {
+       family = "JetBrains Mono";
+      };
+      font.size = 12;
+     };
+   };
+
    bash = {
     enable = true;
     shellAliases = myAliases;
    };
+
    zsh = {
     enable = true;
     shellAliases = myAliases;
    };
+
   };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
