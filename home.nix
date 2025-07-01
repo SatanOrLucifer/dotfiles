@@ -38,6 +38,9 @@ in
    '';
 
     # Qtile Config
+   ".config/nvim".source = ./nvim;
+
+    # Qtile Config
    ".config/qtile".source = ./qtile;
 
   };
