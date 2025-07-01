@@ -37,7 +37,7 @@ in
     --paging=auto
    '';
 
-    # Qtile Config
+    # Nvim Config
    ".config/nvim".source = ./nvim;
 
     # Qtile Config
