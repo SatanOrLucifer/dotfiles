@@ -1,4 +1,4 @@
-{ config, pkgs, self, ... }:
+{ config, pkgs, ... }:
 let
  myAliases = {
   nrs = "sudo nixos-rebuild switch";
@@ -38,7 +38,7 @@ in
    '';
 
     # Nvim Config
-   ".config/nvim".source = self + "/nvim";
+   ".config/nvim".source = ./nvim;
 
     # Qtile Config
    ".config/qtile".source = ./qtile;
