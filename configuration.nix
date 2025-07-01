@@ -101,19 +101,19 @@
   environment.systemPackages = with pkgs; [
     alacritty
     btop
-    davinci-resolve-studio
-    discord
+#    davinci-resolve-studio
+#    discord
     gcc
     git
     neovim 
     nfs-utils
     nodejs
     nodePackages.npm
-    obs-studio
+#    obs-studio
     pcmanfm
-    rofi
+#    rofi
     wget
-    xwallpaper
+#    xwallpaper
   ];
 
   fonts.packages = with pkgs; [
