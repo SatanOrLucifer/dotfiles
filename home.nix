@@ -26,6 +26,7 @@ in
   obs-studio
   rofi
   xwallpaper
+  htop
   ];
 
   home.file = {
@@ -38,10 +39,10 @@ in
    '';
 
     # Nvim Config
-   ".config/nvim".source = ./nvim;
+   ".config/nvim".source = ./user/app/nvim;
 
     # Qtile Config
-   ".config/qtile".source = ./qtile;
+   ".config/qtile".source = ./system/app/qtile;
 
   };
 
