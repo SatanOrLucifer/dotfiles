@@ -30,6 +30,13 @@
     xwallpaper --zoom ~/Pictures/wallpaper/dan.png
     xset r rate 200 35 &
    ''; 
+   libinput = {
+    enable = true;
+    mouse = {
+     accelProfile = "flat";
+     accelSpeed = "0";
+    };
+   };
   };
 
   services.picom = {
